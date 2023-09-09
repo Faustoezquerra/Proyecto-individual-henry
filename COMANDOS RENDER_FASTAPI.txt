@@ -1,0 +1,10 @@
+uvicorn main:app --host 0.0.0.0 --port $PORT
+
+o para terminal reset fastapi:
+uvicorn main:app --reload
+
+GIT_TRACE=1 git push origin main
+GIT_TRACE=1 git push origin main --force
+git commit -m"agregue todos archivos"
+git add .
+git push origin main
