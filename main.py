@@ -10,8 +10,8 @@ from fastapi import Form, Request, Depends, HTTPException
 
 from starlette.responses import HTMLResponse
 
-import os
-os.system("cls")
+"""import os
+os.system("cls")"""
 
 
 
