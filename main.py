@@ -63,9 +63,9 @@ def home(request: Request):
                                     if (segundaParte.trim() !== "") {
                                         if (primeraParte !== "/data/") {
                                             // Convertir a títulos
-                                            var words = segundaParte.toLowerCase().split(' ');
+                                            var words = segundaParte.split(' ');
                                             for (var i = 0; i < words.length; i++) {
-                                                words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+                                                words[i] = words[i].charAt(0) + words[i].slice(1);
                                             }
                                             segundaParte = words.join(' ');
                                                                        }
