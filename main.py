@@ -61,7 +61,7 @@ def home(request: Request):
                                     var segundaParte = document.getElementById("segundaParte").value;
 
                                     if (segundaParte.trim() !== "") {
-                                        if primeraParte !== "/data/" & primeraParte !== "/peliculas_idioma/"{
+                                        if (primeraParte !== "/data/" & primeraParte !== "/peliculas_idioma/"){
                                             // Convertir a títulos
                                             var words = segundaParte.toLowerCase().split(' ');
                                             for (var i = 0; i < words.length; i++) {
