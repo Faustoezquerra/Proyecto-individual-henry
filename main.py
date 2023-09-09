@@ -61,11 +61,11 @@ def home(request: Request):
                                     var segundaParte = document.getElementById("segundaParte").value;
 
                                     if (segundaParte.trim() !== "") {
-                                        if (primeraParte !== "/data/") {
+                                        if primeraParte !== "/data/" & primeraParte !== "/peliculas_idioma/"{
                                             // Convertir a títulos
-                                            var words = segundaParte.split(' ');
+                                            var words = segundaParte.toLowerCase().split(' ');
                                             for (var i = 0; i < words.length; i++) {
-                                                words[i] = words[i].charAt(0) + words[i].slice(1);
+                                                words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
                                             }
                                             segundaParte = words.join(' ');
                                                                        }
